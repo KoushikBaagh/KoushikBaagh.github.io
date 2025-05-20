@@ -26,7 +26,12 @@ export default function Greeting(props) {
                 className="greeting-text-p subTitle"
                 style={{ color: theme.secondaryText }}
               >
-                {greeting.subTitle}
+                {greeting.subTitle.split("|").map((line, index) => (
+                  <React.Fragment key={index}>
+                    {line.trim()}
+                    {index < greeting.subTitle.split("|").length - 1 && <br />}
+                  </React.Fragment>
+                ))}
               </p>
               <SocialMedia theme={theme} />
               <div className="portfolio-repo-btn-div">

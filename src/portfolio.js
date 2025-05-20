@@ -13,11 +13,11 @@ const settings = {
 const seo = {
   title: "Koushik's Portfolio",
   description:
-    "Full-Stack Developer | Open Source Chromium Contributor | Blockchain Enthusiast | CS Grad @BITMesra'24",
+    "Software Engineer and Open Source Chromium contributor specializing in full-stack web development (React, Node.js) with experience in blockchain technologies and AI/ML data operations. CS Graduate @BITMesra'24 actively contributing to Chrome-based projects while pursuing innovation at the intersection of web technologies and decentralized systems.",
   og: {
     title: "Koushik's Portfolio",
     type: "website",
-    url: "https://bit.ly/custom_CV_Koushik",
+    url: "https://ishortn.ink/Video_CV_Koushik",
   },
 };
 
@@ -27,9 +27,9 @@ const greeting = {
   logo_name: "Koushik Kumar Bug",
   // nickname: "the_freeman007",
   subTitle:
-    "Full-Stack Developer | Open Source Chromium Contributor | Blockchain Enthusiast | CS Grad @BITMesra'24",
+    "Software Engineer and Open-source contributor with working experience in Open Source Chrome and Chromium-based\nprojects, full-stack web development (React, Node.js), and AI/ML data operations. ||\nCS Grad @BITMesra'24|",
   resumeLink:
-    "https://drive.google.com/file/d/1Zfl2b0mdjhOBiT6Py6oDk2flQKFV7CDt/view?usp=drive_link",
+    "https://drive.google.com/file/d/1b9vgj8kqHdjehgjR4RLu7hq1FF6SCfTm/view?usp=drive_link",
   portfolio_repository:
     "https://github.com/KoushikBaagh/KoushikBaagh.github.io.git",
   githubProfile: "https://github.com/KoushikBaagh",
@@ -69,8 +69,7 @@ const socialMediaLinks = [
   },
   {
     name: "Video-CV",
-    link:
-      "https://drive.google.com/file/d/1QV1iQj2cN66kolFAPB6bfXc-5eN_-LiR/view?usp=drive_link",
+    link: "https://ishortn.ink/Video_CV_Koushik",
     fontAwesomeIcon: "fab fa-youtube", // Reference https://fontawesome.com/icons/youtube?style=brands
     backgroundColor: "#FBBC04", // Reference https://simpleicons.org/?q=youtube
   },
@@ -222,7 +221,7 @@ const skills = {
       softwareSkills: [
         {
           skillName: "Blockchain",
-          fontAwesomeClassname: "fa-link", // Generic icon for blockchain concept
+          fontAwesomeClassname: "fa-link",
           style: { color: "#F7931A" },
         },
         {
@@ -458,12 +457,13 @@ const experience = {
         {
           title: "Open-Source Contributor (GSOC'25 Application Phase)",
           company: "Google Chromium",
-          company_url: "https://www.chromium.org/",
+          company_url:
+            "https://chromium-review.googlesource.com/q/owner:koushikbug123@gmail.com",
           logo_path: "chromium_logo.png",
           duration: "February 2025 – Present",
           location: "Remote",
           description:
-            "Actively contributing to the Chromium codebase. Implemented new features, fixed bugs, and collaborated with the Google team.",
+            "Actively contributed to the Chromium codebase. Implemented new features, fixed bugs, and collaborated with the Google team.",
           color: "#4285F4",
         },
         {
@@ -480,12 +480,12 @@ const experience = {
         {
           title: "Open-Source Contributor",
           company: "WootzApp, Inc.",
-          company_url: "#", // User to provide if available
+          company_url: "https://www.wootzapp.com/",
           logo_path: "wootzapp_logo.png",
           duration: "May 2024 – August 2024",
           location: "Remote",
           description:
-            'Created a \\"Help-Page\\" Web UI for a Web3 Chromium browser. Engineered a custom Android browser app, restructuring Chromium internals for UI improvements.',
+            'Created a "Help-Page" Web UI for a Web3 Chromium browser. Engineered a custom Android browser app, restructuring Chromium internals for UI improvements.',
           color: "#1DA1F2", // Generic tech blue, adjust as needed
         },
         {
