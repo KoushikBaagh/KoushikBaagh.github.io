@@ -209,5 +209,19 @@ export const professionalDarkTheme = {
   splashBg: "#1F2125",
 };
 
-// export const chosenTheme = blueTheme;
+// New Recruiter-Friendly Light Theme
+export const recruiterLightTheme = {
+  body: "#F8F9FA", // Light Gray background
+  text: "#212529", // Dark Gray for text (almost black)
+  expTxtColor: "#212529", // Consistent text color for experience sections
+  highlight: "#CCE5FF", // Light Blue for backgrounds/highlights (derived from accent)
+  dark: "#0056b3", // Darker blue for hover states or borders (derived from accent)
+  secondaryText: "#6C757D", // Medium Gray for secondary text (dates, etc.)
+  imageHighlight: "#007BFF", // Primary Blue accent for image highlights
+  compImgHighlight: "#E0E0E0", // Neutral gray for component image highlights
+  jacketColor: "#007BFF", // Primary Blue accent (often for splash or dominant elements)
+  headerColor: "#FFFFFF", // Assuming solid white header, can adjust if transparency is used elsewhere
+  splashBg: "#F8F9FA", // Light gray for splash background, can use accent color too
+};
+
 export const chosenTheme = professionalDarkTheme;

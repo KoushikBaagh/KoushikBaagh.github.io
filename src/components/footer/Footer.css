@@ -1,10 +1,19 @@
 .footer-text {
   text-align: center;
-  /* color: #868e96; */
   font-weight: bold;
   font-family: "Google Sans Regular";
 }
 
 .footer-div {
   margin-top: 2rem;
+  padding-bottom: 1.5rem;
+}
+
+.footer-div p {
+  text-align: center;
+  font-weight: bold;
+}
+
+.footer-div p span {
+  vertical-align: middle;
 }

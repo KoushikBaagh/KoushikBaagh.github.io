@@ -17,6 +17,12 @@ export const GlobalStyles = createGlobalStyle`
     // height: 100vh;
     // margin: 0;
     // padding: 0;
-    font-family: BlinkMacSystemFont, -apple-system, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;
+    font-family: 'Open Sans', sans-serif;
     transition: all 0.25s linear;
-  }`;
+  }
+
+  h1, h2, h3, h4, h5, h6 {
+    font-family: 'Montserrat', sans-serif;
+    // You might want to add other heading-specific styles here, e.g., fontWeight, letterSpacing
+  }
+`;
