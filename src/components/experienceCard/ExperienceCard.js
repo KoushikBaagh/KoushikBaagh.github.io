@@ -6,10 +6,9 @@ import { Fade } from "react-reveal";
 const LOGO_URLS = {
   chromium:
     "https://upload.wikimedia.org/wikipedia/commons/5/5e/Chromium_Logo.png",
-  amazon:
-    "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTokBW8NNNPFDXuwJKtJ3TA_N7xlWxvBdygmg&s",
+  amazon: "https://pngimg.com/d/amazon_PNG13.png",
   wootzapp:
-    "https://pbs.twimg.com/profile_images/1606670232839688197/_Y_n5MCb_400x400.jpg",
+    "https://cdn.prod.website-files.com/66dff53e56eb1ffb2e885917/66e28a48c8062a18d0a1faed_logo2%20(1).png",
 };
 
 // Function to get logo based on path
@@ -36,7 +35,7 @@ const LogoComponent = ({ logoPath }) => {
         <img
           className="experience-card-logo"
           src={LOGO_URLS.wootzapp}
-          alt="WootzApp"
+          alt="WootzApp Logo"
         />
       );
     default:

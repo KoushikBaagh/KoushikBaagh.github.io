@@ -37,6 +37,12 @@
   line-height: normal;
 }
 
+.skills-carousel-wrapper {
+  width: 90%;
+  margin: 0 auto 60px auto;
+  max-width: 1200px;
+}
+
 /* Media Query */
 @media (max-width: 1380px) {
   .skills-heading {

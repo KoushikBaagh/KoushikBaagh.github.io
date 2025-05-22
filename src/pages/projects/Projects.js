@@ -17,11 +17,65 @@ import "./Projects.css";
 import ProjectsImg from "./ProjectsImg";
 
 class Projects extends Component {
+  constructor(props) {
+    super(props);
+    this.state = {
+      showEthEffect: false,
+    };
+  }
+
+  componentDidMount() {
+    // Add Ethereum particles effect after component mounts
+    setTimeout(() => {
+      this.setState({ showEthEffect: true });
+    }, 500);
+  }
+
   render() {
     const theme = this.props.theme;
     return (
       <div className="projects-main">
         <Header theme={theme} />
+
+        {/* Web3 Intro Section - Moved before the showcase for better visibility */}
+        {/* <div className="web3-intro-container">
+          <div className="web3-intro">
+            <Fade bottom duration={1000}>
+              <h2 className="web3-heading">Building the Decentralized Future</h2>
+              <p className="web3-description">
+                Exploring blockchain technologies and creating decentralized applications 
+                using Web3.js, Ethereum, and smart contracts. From NFT marketplaces to 
+                DeFi solutions, I'm passionate about the possibilities of Web3.
+              </p>
+            </Fade>
+          </div>
+        </div> */}
+
+        {/* Enhanced MacbookScroll component at the top */}
+        {/* <div className="web3-showcase">
+          <MacbookScroll 
+            title="Web3.js Development"
+            theme={theme} 
+          />
+          
+          {this.state.showEthEffect && 
+            <div className="ethereum-particles">
+              {[...Array(15)].map((_, i) => (
+                <div 
+                  key={i} 
+                  className="eth-particle"
+                  style={{
+                    left: `${Math.random() * 100}%`,
+                    top: `${Math.random() * 100}%`,
+                    animationDelay: `${Math.random() * 5}s`,
+                    animationDuration: `${5 + Math.random() * 10}s`
+                  }}
+                />
+              ))}
+            </div>
+          }
+        </div> */}
+
         <div className="basic-projects">
           <Fade bottom duration={2000} distance="40px">
             <div className="projects-heading-div">
@@ -51,7 +105,7 @@ class Projects extends Component {
         </div>
         <div className="repo-cards-div-main">
           {ProjectsData.data.map((repo) => {
-            return <GithubRepoCard repo={repo} theme={theme} />;
+            return <GithubRepoCard repo={repo} theme={theme} key={repo.id} />;
           })}
         </div>
         <Button
@@ -88,7 +142,7 @@ class Projects extends Component {
 
         <div className="repo-cards-div-main">
           {publications.data.map((pub) => {
-            return <PublicationCard pub={pub} theme={theme} />;
+            return <PublicationCard pub={pub} theme={theme} key={pub.id} />;
           })}
         </div>
 

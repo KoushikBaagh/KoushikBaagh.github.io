@@ -135,16 +135,19 @@
 }
 
 .experience-card-logo {
-  width: 100px;
-  height: 100px;
+  max-width: 80px;
+  width: 25vw;
+  min-width: 50px;
+  height: auto;
+  aspect-ratio: 1/1;
   -webkit-box-shadow: 4px 3px 20px -2px grey;
   -moz-box-shadow: 4px 3px 20px -2px grey;
   box-shadow: 4px 3px 20px -2px grey;
   border-radius: 50%;
-  object-fit: cover;
+  object-fit: contain;
   object-position: center;
   background-color: white;
-  padding: 2px;
+  padding: 0.5px;
 }
 
 .experience-card-svg-logo {
@@ -345,5 +348,12 @@
     margin-left: 14px;
     margin-right: 14px;
     text-align: justify;
+  }
+}
+
+@media (max-width: 600px) {
+  .experience-card-logo {
+    max-width: 70px;
+    min-width: 40px;
   }
 }

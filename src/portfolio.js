@@ -235,8 +235,8 @@ const skills = {
           style: { color: "#6C19FF" },
         },
         {
-          skillName: "Web3.js",
-          text: "Web3.js", // Text-only entry
+          skillName: "Ethers.js",
+          text: "Ethers.js",
           style: { fontWeight: "bold", color: "#363636", marginTop: "-100px" },
         },
       ],
